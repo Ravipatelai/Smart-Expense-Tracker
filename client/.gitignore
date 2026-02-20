@@ -1,0 +1,20 @@
+build/
+dist/
+
+# Testing
+*.tsbuildinfo
+
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local       
+    
