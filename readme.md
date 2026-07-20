@@ -2,7 +2,7 @@
 
 smart-expense-tracker and a powerful personal and group expense tracking platform that helps you manage your finances with ease. Built for individuals and teams to track, split, and settle expenses in real-time.
 
-> **Live Demo:** Deploy to [Vercel](https://smart-expense-tracker-6055.vercel.app/) or run locally — see setup below.
+> **Live Demo:** Deploy to [Vercel] or run locally — see setup below.
 
 ---
 
