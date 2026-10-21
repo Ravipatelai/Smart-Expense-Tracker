@@ -6,6 +6,7 @@ import React, {
 } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
+import { API_URL } from "../services/api";
 
 // -------- Payments --------
 import UpiPayModal from "../components/payments/UpiPayModal";
@@ -42,11 +43,8 @@ function Dashboard() {
 
   // Modals
   const [editingTransaction, setEditingTransaction] = useState(null);
-  const [transactionToDelete, setTransactionToDelete] = useState(null);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isPayModalOpen, setIsPayModalOpen] = useState(false);
-
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
   const token = localStorage.getItem("token");
 
   // ---------------- GUARD ----------------

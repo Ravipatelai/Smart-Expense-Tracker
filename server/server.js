@@ -15,7 +15,7 @@ const userRoutes = require("./routes/userRoutes");
 
 dotenv.config();
 connectDB();
-require('dotenv').config();
+// require('dotenv').config();
 
 const app = express();
 
@@ -31,6 +31,15 @@ app.use('/api/profile', profileRoutes);
 app.use('/api/groups', groupRoutes);
 app.use('/api/invites', inviteRoutes);
 app.use('/api/users', userRoutes);
+
+// Health Check Route
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "ExpenseIQ API is running successfully!",
+  });
+});
+
 
 // Error Handler
 app.use(errorHandler);

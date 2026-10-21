@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Mail, Lock, ArrowLeft } from "lucide-react";
+import { API_URL } from "../services/api";
 
 function Login() {
   const navigate = useNavigate();
@@ -18,8 +19,6 @@ function Login() {
   const [otp, setOtp] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [timer, setTimer] = useState(0);
-
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     let interval;

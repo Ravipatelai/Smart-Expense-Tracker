@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { FiDollarSign, FiCalendar, FiEdit3 } from "react-icons/fi";
-
-const API_URL = import.meta.env.VITE_BACKEND_URL;
+import { API_URL } from "../services/api";
 
 const months = [
   "January", "February", "March", "April", "May", "June",

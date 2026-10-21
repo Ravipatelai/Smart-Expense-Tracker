@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { User, Mail, Lock } from "lucide-react";
+import { API_URL } from "../services/api";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -11,8 +12,6 @@ function Register() {
 
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleChange = (e) => {
     setFormData({

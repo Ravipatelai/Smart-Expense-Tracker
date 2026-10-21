@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import DeleteConfirmModal from "../components/dashboard/DeleteConfirmModal";
 import { Sparkles, PlusCircle, X } from "lucide-react";
+import { API_URL } from "../services/api";
 
 const BudgetPage = () => {
   const [refresh, setRefresh] = useState(false);
@@ -15,7 +16,6 @@ const BudgetPage = () => {
   const [suggestions, setSuggestions] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
 
   const confirmDeleteBudget = async () => {
     if (!budgetToDelete) return;

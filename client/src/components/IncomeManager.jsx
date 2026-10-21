@@ -8,7 +8,7 @@ import {
   Eye,
   EyeOff,
   ArrowLeft
-} from 'lucide-react';
+import { API_URL } from '../services/api';
 
 const ITEMS_PER_PAGE = 5;
 
@@ -31,7 +31,6 @@ const IncomeManager = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [visibleAmounts, setVisibleAmounts] = useState({});
 
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
   const token = localStorage.getItem('token');
 
   const fetchIncomes = async () => {

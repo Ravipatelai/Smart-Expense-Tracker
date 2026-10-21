@@ -3,10 +3,9 @@ import axios from "axios";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import { Wallet, CreditCard, TrendingDown, ArrowRight, ArrowLeft, PieChart, Edit2, Trash2 } from "lucide-react";
+import { API_URL } from "../services/api";
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
-
-const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const BudgetSummaryCard = ({ title, amount, icon: Icon, color, bg }) => (
   <div className="bg-card border border-border/50 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full group">

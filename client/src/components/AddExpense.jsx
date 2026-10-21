@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, Receipt } from "lucide-react";
+import { API_URL } from "../services/api";
 
 // helper to get today in YYYY-MM-DD
 const getTodayDate = () => {
@@ -18,8 +19,6 @@ const AddExpense = () => {
   const [date, setDate] = useState(getTodayDate()); // ✅ AUTO TODAY
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-
-  const API_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleAddExpense = async (e) => {
     e.preventDefault();
