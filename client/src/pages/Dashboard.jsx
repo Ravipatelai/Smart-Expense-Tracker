@@ -8,6 +8,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import { API_URL } from "../services/api";
 
+
 // -------- Payments --------
 import UpiPayModal from "../components/payments/UpiPayModal";
 import PaymentConfirmModal from "../components/payments/PaymentConfirmModal";
@@ -30,7 +31,7 @@ function Dashboard() {
   const [monthlyExpense, setMonthlyExpense] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+const [transactionToDelete, setTransactionToDelete] = useState(null);
   // Filters
   const [selectedCategory, setSelectedCategory] = useState("");
   const [startDate, setStartDate] = useState("");

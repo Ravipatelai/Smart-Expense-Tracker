@@ -7,7 +7,7 @@ import {
   IndianRupee,
   Eye,
   EyeOff,
-  ArrowLeft
+  ArrowLeft } from "lucide-react";
 import { API_URL } from '../services/api';
 
 const ITEMS_PER_PAGE = 5;
